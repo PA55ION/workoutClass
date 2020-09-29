@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Browse from "./pages/Browse";
 import Home from "./pages/Home";
 import Current from "./pages/Current";
+import NotFound from "./pages/NotFound"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/current">
           <Current />
         </Route>
+        <Route path='*' component={NotFound} />
       </Switch>
     </div>
   );

@@ -3,13 +3,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import workout from "../assets/workout.png";
+import Button from 'react-bootstrap/Button'
 
 const Home = () => {
   return (
     <Container>
       <Row>
         <Col>
-          <div className="hero container">
+          <div className="hero">
             <h1 className="hero_text_banner">
               {" "}
               Stay Productive & Work Remotely
@@ -19,6 +20,7 @@ const Home = () => {
               allows you to focus on the tasks at hand. Whether you are working
               from home for the first time.
             </p>
+            <Button variant="danger">Learn more</Button>
           </div>
         </Col>
         <Col>

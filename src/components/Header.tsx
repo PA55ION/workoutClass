@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 function Header() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
-      <Container>
+      <Container className='navbar_text'>
         <Navbar.Brand as={Link} to="/">
           Workout
         </Navbar.Brand>

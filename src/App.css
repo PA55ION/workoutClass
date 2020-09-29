@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Tenali+Ramakrishna&display=swap');
 
+/* home screen style */
 .hero {
   margin-top: 208px;
   width: 100%;
@@ -20,10 +21,51 @@
 }
 
 .img_container {
-  margin-top: 105px;
+  margin-top: 114px;
+  margin-left: 25px;
 }
 
 .img_banner {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
+}
+
+
+/* video cards style for brows content screen */
+.container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+}
+
+
+/* navbar */
+.navbar_text {
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 22px;
+}
+
+.notfound_img {
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  top: 0;
+  right: 0;
+
+}
+
+/* star rating */
+input[type=radio] {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+  -webkit-transition: color 200ms;
+  -moz-transition: color 200ms;
+  -ms-transition: color 200ms;
+  -o-transition: color 200ms;
 }

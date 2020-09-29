@@ -1,10 +1,21 @@
-import { render } from '@testing-library/react';
-import React from 'react';
+import React, { useContext } from "react";
+import { Context } from "../Context";
+import Cards from "../components/Cards";
 
 const Browse = () => {
-    return (
-        <div>Browse Page</div>
-    )
-}
+  const { videos } = useContext(Context);
 
-export default Browse
+  const renderVideo = videos?.map((item, id) =>
+    <Cards item={item} key={id} />
+  );
+
+  console.log(videos);
+  return (
+    <div className="container-fluid">
+      <h1>Browse Content</h1>
+      <div className="container">{renderVideo}</div>
+    </div>
+  );
+};
+
+export default Browse;
