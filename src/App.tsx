@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
-import Browse from "./pages/Browse";
-import Home from "./pages/Home";
+import Browse from "./pages/browse/Browse";
+import Home from "./pages/home/Home";
 import Current from "./pages/Current";
 import NotFound from "./pages/NotFound"
 

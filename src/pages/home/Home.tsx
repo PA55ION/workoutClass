@@ -2,8 +2,10 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import workout from "../assets/workout.png";
+import workout from "../../assets/workout.png";
 import Button from 'react-bootstrap/Button'
+import './Home.css'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -20,7 +22,9 @@ const Home = () => {
               allows you to focus on the tasks at hand. Whether you are working
               from home for the first time.
             </p>
-            <Button variant="danger">Learn more</Button>
+            <div className="button-container">
+            <Button variant="danger" as={Link} to="/browse">Browse Content</Button>
+            </div>
           </div>
         </Col>
         <Col>

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
-import { Context } from "../Context";
-import Cards from "../components/Cards";
+import { Context } from "../../Context";
+import Cards from "../../components/cards/Cards";
+import "./Browse.css"
 
 const Browse = () => {
   const { videos } = useContext(Context);
@@ -12,7 +13,7 @@ const Browse = () => {
   console.log(videos);
   return (
     <div className="container-fluid">
-      <h1>Browse Content</h1>
+      <h1 className="browse_header header">Browse Content</h1>
       <div className="container">{renderVideo}</div>
     </div>
   );

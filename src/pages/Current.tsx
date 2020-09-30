@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Context } from '../Context'
 import VideoCards from '../components/VideoCards'
-// import Cards from '../components/Cards'
+
 
 const Current = () => {
     const { addVideo } = useContext(Context);
@@ -12,6 +12,7 @@ const Current = () => {
     ))
     return (
         <div className="container-fluid">
+        <h1 className="current_header header">Current Content</h1>
             <div className="container">
                 { newVideo }
             </div>

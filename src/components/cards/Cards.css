@@ -1,0 +1,12 @@
+:root {
+  --primary-font: 'Ramaraja', serif;
+  /* --secondary-font: 'Tenali Ramakrishna', sans-serif; */
+  --secondary-font: 'Peddana', serif;
+}
+
+.header {
+  font-family: var(--primary-font);
+  text-align: center;
+  margin: 75px 0 45px 0;
+  color: #1B0A42;
+}

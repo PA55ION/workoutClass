@@ -8,7 +8,7 @@ function Header() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container className='navbar_text'>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/" className="brand">
           Workout
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

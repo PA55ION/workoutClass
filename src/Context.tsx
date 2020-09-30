@@ -43,21 +43,13 @@ const ContextProvider = ({ children }: Children) => {
     }, [addVideo])
 
     function addToFavorite(newVideo: any) {
-        setAddVideo((prevVideo: any) =>[...prevVideo, newVideo])
+        setAddVideo((prevVideo: any) => [...prevVideo, newVideo])
     }
 
     function removeFromFavorite(id: any) {
+        // localStorage.clear()
         setAddVideo((previous: any)=> previous.filter((item: any) => item.id !== id))
     }
-
-//     function starRating(ratings: any) {
-//         const newArr = videos.map((star, i)=> {
-//             const ratingValue = i + 1;
-//             return {...star, ratings}
-//         })
-//         setRating(newArr)
-//     }
-// console.log(rating)
 
     return(
        <Context.Provider value={{ videos, addToFavorite, addVideo, removeFromFavorite, rating }}>

@@ -1,0 +1,21 @@
+.container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.card {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+} 
+
+.browse_header {
+  font-family: var(--primary-font);
+  text-align: center;
+  margin: 75px 0 45px 0;
+  color: #1B0A42;
+}
+

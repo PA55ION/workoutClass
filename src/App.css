@@ -1,45 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Tenali+Ramakrishna&display=swap');
 
-/* home screen style */
-.hero {
-  margin-top: 208px;
-  width: 100%;
-  max-width: 500px;
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+  --primary-font: 'Ramaraja', serif;
+  /* --secondary-font: 'Tenali Ramakrishna', sans-serif; */
+  --secondary-font: 'Peddana', serif;
 }
 
-.hero_text_banner {
-  letter-spacing: 0.02em;
-  font-family: 'Ramaraja', serif;
-  font-size: 60px;
+.card-footer {
 }
 
-.hero_text {
-  font-family: 'Tenali Ramakrishna', sans-serif;
-  font-size: 21px;
-  line-height: 32px;
-  letter-spacing: 0.02em;
+/* .badge {
+  font-size: 18px;
+} */
+
+.check-icon {
+  color: #00d1b2;
+  animation: slideInUp; 
+  animation-duration: .5s;
 }
 
-.img_container {
-  margin-top: 114px;
-  margin-left: 25px;
+span{
+  color: #00d1b2;
+  animation: slideInUp; 
+  animation-duration: .5s;
 }
-
-.img_banner {
-  width: 100%;
-  max-width: 650px;
-}
-
-
-/* video cards style for brows content screen */
-.container {
-  padding: 10px;
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-flow: dense;
-}
-
 
 /* navbar */
 .navbar_text {
@@ -69,3 +57,9 @@ input[type=radio] {
   -ms-transition: color 200ms;
   -o-transition: color 200ms;
 }
+
+.brand {
+  font-family: var(--primary-font);
+  /* font-size: 1em; */
+}
+
